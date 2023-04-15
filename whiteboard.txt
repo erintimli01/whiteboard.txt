@@ -1,0 +1,21 @@
+//remove duplicates from array
+//no filter()
+//input 7, 9, "hi", 12, "hi", 7, 53 output 7, 9, hi, 12, 53
+//empty array to store values
+//for each element in array we want to check if element is already in array
+//if not in array --
+//return the array with duplicates removed
+
+function removeDuplicates(arr) {
+    let uniqueArr = []; 
+    for (let i = 0; <arr.length; i++) {
+        if (uniqueArr.indexOf(arr[i]) === -1) {
+            uniqueArr.push(arr[i]);
+        }
+    }
+    return uniqueArr; //duplicates removed
+    
+    
+    //error handling
+    if (!array.isarray(arr)
+        throw new error ('not array')
